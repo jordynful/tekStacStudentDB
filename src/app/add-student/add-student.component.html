@@ -1,0 +1,12 @@
+<form #input = "ngForm" (ngSubmit)="onSubmit(input)">
+    <div class="form-group" >
+    <input name = "name" type="text" placeholder="Name"  [(ngModel)] = "studentNew.name">
+    </div>
+    <div class="form-group" >
+    <input name = "registration" placeholder="Register Number"   type="text"  [(ngModel)] = "studentNew.registerNumber">
+    </div>
+    <div class="form-group" >
+    <input name = "age" type = "number" placeholder="Age"   [(ngModel)] = "studentNew.age">
+  </div>
+    <button type = "submit">Submit</button>
+  </form>
